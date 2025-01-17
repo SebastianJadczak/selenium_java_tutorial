@@ -12,6 +12,19 @@ public class Page {
 
     public void fillSearchForm() {
         locators.searchByHotelSpan.click();
-        locators.nameCityOrHotel.sendKeys("123");
+        locators.nameCityOrHotelInput.sendKeys("123");
+        locators.checkinInput.sendKeys("123");
+        locators.checkoutInput.sendKeys("123");
+        locators.searchByHotelSpan.click();
+    }
+
+    public void goToLogin() {
+        locators.myAccountLink.click();
+        locators.loginLink.click();
+    }
+
+    public void goToSignUp() {
+        locators.myAccountLink.click();
+        locators.signUpLink.click();
     }
 }
