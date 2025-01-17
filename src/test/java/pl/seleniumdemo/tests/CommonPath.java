@@ -14,7 +14,7 @@ public class CommonPath implements BaseInterface {
     }
 
     public void searchHotel(){
-        driver.get("http://www.kurs-selenium.pl/demo/");
+        driver.get(get_url());
         main_site.fillSearchForm();
     }
 }
