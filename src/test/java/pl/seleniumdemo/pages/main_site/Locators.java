@@ -11,6 +11,15 @@ public class Locators {
         PageFactory.initElements(driver, this);
     }
 
+    @FindBy(xpath = "//a[text()=' My Account ']")
+    protected WebElement myAccountLink;
+
+    @FindBy(xpath = "//a[text()='Login']")
+    protected WebElement loginLink;
+
+    @FindBy(xpath = "a//[contains(text()='Sign Up')]")
+    protected WebElement signUpLink;
+
     @FindBy(xpath = "//span[text()='Search by Hotel or City Name']")
     protected WebElement searchByHotelSpan;
 
